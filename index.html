@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Word Learner</title>
+	<!-- boxicons -->
+	<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+	<!-- <link rel="stylesheet" href="css/1.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="header">
+		<div class="header_section">
+			<div class="header__item headerlogo">
+				<box-icon name='won' ></box-icon>				
+			</div>
+			<div class="header__item headerButton">
+				<a href="#">Главная</a>
+			</div>
+			<div class="header__item headerButton">
+				<a href="#">Запись</a>
+			</div>
+			<div class="header__item headerButton">
+				<a href="#">Практика</a>
+			</div>
+			<div class="header__item headerButton">
+				<a href="#">Библиотека</a>
+			</div>
+		</div>
+	</div>
+	<div class="block_content">
+		<div class="saveInfo_name">
+			<p>Запись</p>
+		</div>
+		<div class="saveInfo">
+			<input type="text" name="words" class="saveInputEn" placeholder="Введи слово на английском">
+			<input type="text" name="words" class="saveInputRu" placeholder="Введи перевод на русском">
+			<button type="submit" class="saveBtn" onclick="saveWords()">Нажми чтобы запомнить слово</button>
+		</div>
+		<div class="practice_content">
+			<div class="practice_name">
+				<p>Практика</p>
+			</div>
+			<div class="practice">
+				<input type="submit" class="start" value="Начать" onclick="start()">
+				<input type="text" class="practiceInputEn" readonly>
+				<input type="text" class="practiceInputRu" placeholder="Введите перевод">
+				<button type="submit" class="practiceBtn" onclick="check()">Проверить</button>
+				<button type="submit" onclick="reset()">reset</button>
+				<button type="submit" onclick="look()">all</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+	<script src="js/db.js"></script>
+</body>
+</html>
