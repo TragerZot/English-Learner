@@ -71,5 +71,6 @@ const showAll = () => {
 };
 
 const clear = () => {
-	document.querySelector(".libraryArea").value = "";
-};
+	let key = document.querySelector(".libraryDelete").value;
+	localStorage.removeItem(key);
+}; 	
